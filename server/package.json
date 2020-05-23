@@ -1,0 +1,38 @@
+{
+  "name": "untitled-game-server",
+  "version": "1.0.0",
+  "description": "backend server for Cody's Untitled-Game Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "server": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/CodyBrewer/untitled-game.git)"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "postgresql",
+    "prisma",
+    "graphql"
+  ],
+  "author": "CodyBrewer (https://codybrewer.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}
