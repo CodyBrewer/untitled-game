@@ -1,5 +1,5 @@
 require('dotenv').config();
-const server = require('./server.js');
+const server = require('./graphql/server.js');
 
 const OPTIONS = require('./config/options.js');
 
