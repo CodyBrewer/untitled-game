@@ -1,8 +1,8 @@
 require('dotenv').config();
-const server = require('./api/app.js');
+const server = require('./server.js');
 
-const PORT = process.env.PORT || 4000;
+const OPTIONS = require('./config/options.js');
 
-server.listen(PORT, () => {
-  console.log(`...server listening on port: ${PORT}`);
+server.start(OPTIONS,() => {
+  console.log(`servers is up and running on port ${OPTIONS.port}`);
 });
