@@ -1,0 +1,22 @@
+{
+  "name": "untitled-game-server",
+  "version": "1.0.0",
+  "description": "backend server for Cody's Untitled-Game Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/CodyBrewer/untitled-game.git)"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "postgresql",
+    "prisma",
+    "graphql"
+  ],
+  "author": "CodyBrewer (https://codybrewer.dev)",
+  "license": "MIT"
+}
