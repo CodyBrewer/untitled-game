@@ -1,4 +1,5 @@
-const { GraphQLServer } = require('graphql-yoga');
+const { GraphQLServer, } = require('graphql-yoga');
+const { makeExecutableSchema } = require('graphql-tools');
 
 const typeDefs = `
   type Query {
@@ -12,9 +13,16 @@ const resolvers = {
   }
 }
 
-const server = new GraphQLServer({
+const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
 })
 
-module.exports = server;
+const server = new GraphQLServer({
+  schema
+})
+
+module.exports = {
+  schema,
+  server
+};
