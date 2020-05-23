@@ -4,7 +4,9 @@
   "description": "backend server for Cody's Untitled-Game Project",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "server": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
