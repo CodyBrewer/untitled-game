@@ -18,13 +18,15 @@ To get the server running locally:
 
 #### Framework
 
-- The Server is built using NodeJS and ExpressJS. Learn more about [Nodejs](https://nodejs.org/en/docs) and [ExpressJS](https://expressjs.com)
+- Our backend server is built using graphql-yoga. graphql-yoga is the easiest way to set up a GraphQL server that includes subscriptions, compatible with all graphql clients and is based off [express](https://github.com/expressjs/express) and [apollo-server](https://github.com/apollographql/apollo-server). Learn more on [graphql-yoga](https://github.com/prisma-labs/graphql-yoga)
 
 - PostgreSQL is used as the database as it is one of the most full-featured open-source database platforms. Learn More on [PostgreSQL](https://www.postgresql.org)
 
-- Apollo and Prisma will be used to integrate GraphQL into the Node/Express Server. Learn more about [Apollo](https://www.apollographql.com/docs/) and [Prisma](https://www.prisma.io/docs/)
+- Prisma will be used to communicate between our graphql-yoga server and our PostgreSQL database. Learn more about [Prisma](https://www.prisma.io/docs/)
 
 - The API will be built using the [GraphQL Specification](https://spec.graphql.org)
+
+- Testing is done using the Jest testing library. All tests are found within the server/tests/ folder. Learn more about [Jest](https://github.com/facebook/jest)
 
 ## Contributing
 
@@ -52,7 +54,7 @@ We would love to hear from you about new features which would improve this app a
 
 If you have developed a patch, bug fix, or new feature that would improve this app, please submit a pull request. It is best to communicate your ideas with the developers first before investing a great deal of time into a pull request to ensure that it will mesh smoothly with the project. It is recommended to create a draft pull request first and when ready for review add the owners of this repository to review the pull request.
 
-Remember that this project is licensed under the MIT license, and by submitting a pull request, you agree that your work will be, too.
+Remember that this project is licensed under the MIT license, and by submitting a pull request, you agree that your work will be, too. Full details on the MIT License can be found in the LICENSE.md at the rood of the project.
 
 #### Pull Request Guidelines
 
@@ -83,21 +85,21 @@ orientation.
 
 Examples of behavior that contributes to creating a positive environment include:
 
-*Using welcoming and inclusive language
-*Being respectful of differing viewpoints and experiences
-*Gracefully accepting constructive criticism
-*Focusing on what is best for the community
-*Showing empathy towards other community members
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-*The use of sexualized language or imagery and unwelcome sexual attention or
+- The use of sexualized language or imagery and unwelcome sexual attention or
 advances
-*Trolling, insulting/derogatory comments, and personal or political attacks
-*Public or private harassment
-*Publishing others' private information, such as a physical or electronic
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic
   address, without explicit permission
-*Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ### Our Responsibilities
