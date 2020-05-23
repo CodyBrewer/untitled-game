@@ -2,11 +2,14 @@
   "name": "untitled-game-server",
   "version": "1.0.0",
   "description": "backend server for Cody's Untitled-Game Project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --watch",
     "server": "nodemon app.js",
     "start": "node app.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,8 @@
     "helmet": "^3.22.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
