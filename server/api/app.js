@@ -8,8 +8,4 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 
-// app.get('/', (req, res) => {
-//   res.send({ server: "up" });
-// });
-
 module.exports = app;
