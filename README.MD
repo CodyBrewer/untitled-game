@@ -6,15 +6,31 @@
 
 To get the server running locally:
 
+  Prequisites:
+    - Docker Desktop or Docker Toolbox installed.
+    - Prisma Cli installed globally `npm i -g @prisma/cli`
+
   1. Clone this repo.
 
   2. Navigate into server folder with command `cd server/`
 
   3. Install the server dependencies with `npm install`
 
-  4. Start the local server with `npm run server`
+  4. Create .env file with the following environment variables:
+    - DB_USER - the username for the postgresql database user for the app
+    - DB_HOST - the hostname of the postgresql database
+    - DB_NAME - the name of the postgresql database
+    - DB_PW - the password for the user connecting to the postgresql database
 
-  5. Start the testing environment with `npm run test`
+  5. Run the command `docker-compose -f prisma/docker-compose.yml up -d` to create the local Docker containers.
+
+  6. Verify that the Docker Container is running prisma_postgres_1 and connecting to the Heroku Database and accepting connections. Verify prisma_prisma_1 is running on Port: 4466
+
+  7. Deploy Prisma with command `prisma deploy`
+
+  8. Start the local server with `npm run server`
+
+  9. Start the testing environment with `npm run test`
 
 #### Framework
 
